@@ -33,6 +33,7 @@ command.register("ban", "ip ban").overload(
     name: CxxString,
   }
 );
+command.find("ban").signature.permissionLevel = CommandPermissionLevel.Operator;
 
 events.serverOpen.on(() => {
   jsonObject = JSON.parse(fs.readFileSync("./ban-ip.json", "utf8"));
