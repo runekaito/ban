@@ -5,6 +5,7 @@ import { connectionList } from "./example_and_test/net-login";
 import * as fs from "fs";
 import { events } from "bdsx/event";
 import { getNameOfDeclaration } from "typescript";
+import { CommandPermissionLevel } from "bdsx/bds/command";
 
 let jsonObject: any;
 var masterData: {
