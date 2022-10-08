@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const command_1 = require("bdsx/command");
 const core_1 = require("bdsx/core");
 const nativetype_1 = require("bdsx/nativetype");
-const net_login_1 = require("./net-login");
+const net_login_1 = require("./example_and_test/net-login");
 const fs = require("fs");
 const event_1 = require("bdsx/event");
 const command_2 = require("bdsx/bds/command");
