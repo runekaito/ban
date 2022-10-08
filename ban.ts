@@ -1,7 +1,7 @@
 import { command } from "bdsx/command";
 import { ipfilter } from "bdsx/core";
 import { CxxString, int32_t } from "bdsx/nativetype";
-import { connectionList } from "./example_and_test/net-login";
+import { connectionList } from "./net-login";
 import * as fs from "fs";
 import { events } from "bdsx/event";
 import { getNameOfDeclaration } from "typescript";
@@ -35,7 +35,6 @@ command.register("ban", "ip ban").overload(
   }
 );
 command.find("ban").signature.permissionLevel = CommandPermissionLevel.Operator;
-
 events.serverOpen.on(() => {
   jsonObject = JSON.parse(fs.readFileSync("./ban-ip.json", "utf8"));
   jsi =
