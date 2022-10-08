@@ -4,15 +4,13 @@ import { CxxString, int32_t } from "bdsx/nativetype";
 import { connectionList } from "./net-login";
 import * as fs from "fs";
 import { events } from "bdsx/event";
+import { getNameOfDeclaration } from "typescript";
 
 let jsonObject: any;
 var masterData: {
+  name: string;
   ip: any;
 }[] = [];
-let x: number;
-let y: number;
-let z: number;
-let cmd: string;
 let jsi: object;
 command.register("ban", "ip ban").overload(
   (p, o, op) => {
@@ -21,6 +19,7 @@ command.register("ban", "ip ban").overload(
       if (actor?.isPlayer() && actor?.getName() == p.name) {
         var ip1 = ni.getAddress();
         var data = {
+          name: actor.getName(),
           ip: ip1,
         };
         masterData.push(data);
