@@ -1,5 +1,6 @@
 
 // Network Hooking: Get login IP and XUID
+// This file is a copy of one of the BDSX example files. Thanks to the developers of BDSX.
 import { NetworkIdentifier } from "bdsx/bds/networkidentifier";
 import { MinecraftPacketIds } from "bdsx/bds/packetids";
 import { BuildPlatform } from "bdsx/common";
