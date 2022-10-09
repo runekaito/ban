@@ -2,7 +2,7 @@
 IP-BAN bdsx plugin
 
 ## How to install  
-Download ban.ts and place the file in the BDSX root directory (same hierarchy as files such as bdsx.bat).  
+Download ban.ts and place the file in the BDSX root directory (same hierarchy as files such as bdsx.bat). The net-login.ts file is for developers and is not required.  
 Next, edit index.ts in the same directory and add `import './ban';` to the last line.  
   
 ## How to use  
