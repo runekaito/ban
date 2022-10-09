@@ -14,4 +14,4 @@ This plugin is under development and may have bugs, especially in critical areas
 ## ToDo
 - [ ] Correspondence to Plugins folder  
 - [ ] finer command  
-- [ ] IPv6 testing  
+- [x] IPv6 testing -not support  
