@@ -13,6 +13,5 @@ For example, `/ban kaito02020424`.
 This plugin is under development and may have bugs, especially in critical areas. Therefore, we do not take any responsibility for anything that happens with this plugin.  
 ## ToDo
 - [ ] Correspondence to Plugins folder  
-- [ ] finer command  
-- [ ] IPv6 testing -not support  
+- [ ] finer command   
 - [ ] Exclusion settings such as operators  
